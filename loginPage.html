@@ -5,11 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 插件的引入 -->
+    <link rel="stylesheet" href="./style/loginPage.css">
+    <!-- jquery -->
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+    <!-- font awesome -->
+    <link href="https://cdn.bootcss.com/font-awesome/5.10.2/css/all.css" rel="stylesheet">
     <title>登陆学习</title>
 </head>
+<!-- div部分 -->
 
 <body>
-
+    <div class="show-login-btn">
+        <i class="fas fa-sign-in-alt"></i>
+        Show Login Form
+    </div>
+    <div class="login-box">
+        <div class="hide-login-btn">
+            <i class="fas fa-times"></i>
+        </div>
+        <form class="login-form" action="index.html" method="post">
+            <h1>Welcome</h1>
+            <input class="txtb" type="text" name="" placeholder="Username">
+            <input class="txtb" type="password" name="" placeholder="Password">
+            <input class="login-btn" type="submit" name="" value="Login">
+        </form>
+    </div>
+    <script type="text/javascript">
+        $('.show-login-btn').on("click", function () {
+            $(".login-box").toggleClass('showed');
+        });
+        $('.hide-login-btn').on("click", function () {
+            $(".login-box").toggleClass('showed');
+        });
+    </script>
 </body>
 
 </html>

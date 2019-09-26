@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/selectHover.css">
+    <!-- jquery -->
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+    <!-- font awesome -->
+    <link href="https://cdn.bootcss.com/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+    <title>选项点击相应</title>
+</head>
+
+<body>
+    <div class="middle">
+        <div class="sm-container">
+            <i class="show-btn fas fa-user"></i>
+            <div class="sm-menu">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            </i>
+        </div>
+        <script>
+            $(".show-btn").click(function () {
+                $(".sm-menu").fadeToggle('fast');
+                // 淡入淡出的效果切换
+                // fadeToggle() 方法在 fadeIn() 和 fadeOut() 方法之间切换。
+            })
+        </script>
+</body>
+
+</html>

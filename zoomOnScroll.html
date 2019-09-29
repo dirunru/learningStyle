@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 插件的引入 -->
+    <link rel="stylesheet" href="./style/zoomOnScroll.css">
+    <!-- jquery -->
+    <script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+    <title>zoomOnScroll</title>
+</head>
+
+<body>
+    <div class="hero-back">
+        <img src="../../images/huo.jpg" alt="">
+    </div>
+    <div class="content">
+        <h1>Content</h1>
+        <p>夜，结束了一天的喧嚣后安静下来，伴随着远处路灯那微弱的光。风，毫无预兆地席卷整片旷野，撩动人的思绪万千。星，遥遥地挂在天空之中，闪烁着它那微微星光，不如阳光般灿烂却如花儿般如痴如醉。</p>
+        <p>欲将沉醉换悲凉，清歌莫断肠。这混乱的尘世，究竟充斥了多少绝望和悲伤。你想去做一个勇敢的男子，为爱，为信仰，轰轰烈烈的奋斗一场。你周身充斥着无人可比的灵气和光芒。你有着与伟人比肩的才气和名声，你是那样高傲孤洁的男子。你的一寸狂心未说，已经几度黄昏雨。
+        </p>
+        <p>曾经以为，相爱的人一定要相守，只有相守，情感才能长久。可是，此岸和彼岸只不过是空间的差距，却无法拉长心灵的距离。</p>
+        <p>一段情，反复的掂量，最后加深了岁月的绵长。一路追赶里，一路追忆里，最后得到的是什么，最后又失去的是什么。或许，只有我们在静思的时候才会明白，这路的追忆里，我们得到的快乐往往比痛苦要少。当相思成殇的时候，除了对月徒悲叹之外，什么也不曾抓到。
+        </p>
+        <p>一直执着于生命的简约格调，只愿用一颗淡然的心看云卷云舒，看季节更迭。许多不合时节的事物，必然会被光阴遗落，就像曾经繁茂的秋叶，待生命枯竭，终将脱离叶脉的相系相牵。而我，一直在这里，抖落一身的负累，永恒以树的姿态站立于季风中，昂首向着那无边温暖的碧蓝晴空。
+        </p>
+    </div>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var scrollPos = $(this).scrollTop();
+            console.log('scrollPos: ', scrollPos);
+            $(".hero-back").css({
+                "background-size": 100 + scrollPos + "%"
+            })
+        })
+    </script>
+</body>
+
+</html>

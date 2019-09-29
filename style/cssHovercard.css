@@ -52,6 +52,7 @@ body {
 .container .card .face.face2 {
     background: #111;
     transition: .5s;
+    /* 没有添加渐变背景前 */
 }
 
 .container .card .face.face2:before {
@@ -62,6 +63,7 @@ body {
     width: 50%;
     height: 100%;
     background: rgba(255, 255, 255, .1);
+    /* 右半边颜色 配合上 面代码实现中间分割*/
 }
 
 .container .card .face.face2 h2 {

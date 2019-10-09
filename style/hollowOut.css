@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #333;
+}
+
+h1 {
+    font-size: 200px;
+    text-transform: uppercase;
+    /* 文本转换 */
+    /* 定义文本只有大写 value: capitalize  	文本中的每个单词以大写字母开头。*/
+    /*                      uppercase 	定义仅有大写字母。
+                            lowercase 	定义无大写字母，仅有小写字母。
+                            inherit 	规定应该从父元素继承 text-transform 属性的值 */
+    font-weight: 900;
+    letter-spacing: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    background: url('../../../images/冰川.jpg');
+    background-size: cover;
+    /* -webkit-text-fill-color: transparent； */
+    color: transparent;
+    /*文本填充颜色 不过它虽然兼容性差，但是却可以制作很炫酷的文字效果，比如说流光文字，镂空文字等等。 */
+    -webkit-background-clip: text;
+    background-clip: text;
+}

@@ -63,7 +63,7 @@ body {
     width: 50%;
     height: 100%;
     background: rgba(255, 255, 255, .1);
-    /* 右半边颜色 配合上 面代码实现中间分割*/
+    /* 右半边颜色 配合上 面代码实现中间分割,透明的,before中间有一条缝*/
 }
 
 .container .card .face.face2 h2 {
